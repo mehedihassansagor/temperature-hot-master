@@ -49,7 +49,7 @@
             .then(response => response.json())
             .then(data => {
                 document.getElementById('palce-name').innerText = data ['name'];
-                document.getElementById('weather').innerText = data['main']['temp'];
+                document.getElementById('weather').innerText = data['main']['temp']
                 document.getElementById('description').innerText = data['weather']['0']['description']
             });
             
