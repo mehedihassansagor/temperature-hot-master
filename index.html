@@ -45,7 +45,7 @@
         var description = document.getElementById('description');
 
         find.addEventListener('click',function(){
-            fetch('http://api.openweathermap.org/data/2.5/weather?q='+giveInput.value+'&appid=20cbd69d3b9d410ef05c3281b273662d&units=metric')
+            fetch('https://api.openweathermap.org/data/2.5/weather?q='+giveInput.value+'&appid=20cbd69d3b9d410ef05c3281b273662d&units=metric')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('palce-name').innerText = data ['name'];
